@@ -4,6 +4,10 @@ const Usuario = require('../models/Usuario');
 const router = express.Router();
 
 // Crear un nuevo usuario
+router.post('/register', async (req, res) => {
+  // Código para registrar el usuario
+});
+
 router.post('/', async (req, res) => {
     const { nombre, email, password, rol } = req.body;
 
